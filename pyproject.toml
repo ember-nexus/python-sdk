@@ -3,24 +3,32 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name =  "py-project-toml"
+name =  "ember-nexus-python-sdk"
+version = "0.0.0"
 authors = [
-    {name = "Daniel Ciborowski", email = "dciborow@microsoft.com"},
+    {name = "Sören Klein", email = "info@ember-nexus.dev"},
 ]
-description = "Sample Python Project for creating a new Python Module"
+description = "Wrapper around the Ember Nexus API for Python"
 readme = "README.md"
+keywords = [
+    "ember-nexus",
+    "sdk"
+]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 2 - Pre-Alpha",
+    "Framework :: AnyIO",
     "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11"
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database :: Front-Ends"
 ]
-requires-python = ">=3.8.1"
-dynamic = ["version"]
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
 
 [project.optional-dependencies]
 spark = [
@@ -47,9 +55,9 @@ test = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/microsoft/python-package-template/tree/main#readme"
-Source = "https://github.com/microsoft/python-package-template"
-Tracker = "https://github.com/microsoft/python-package-template/issues"
+Documentation = "https://github.com/ember-nexus/python-sdk/tree/main#readme"
+Source = "https://github.com/ember-nexus/python-sdk"
+Tracker = "https://github.com/ember-nexus/python-sdk/issues"
 
 [tool.flit.module]
 name = "python_package"
